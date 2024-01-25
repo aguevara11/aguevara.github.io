@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>BED AND BREAK LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo-container">
+                <img src="bdlogo.png" alt="Logo">
+            </div>
+            
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">HOSTS</a></li>
+                    <li><a href="unit.html">UNIT</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+         <h1>NASHVILLE</h1>
+
+    </section>
+
+<section class="photos">
+    <div class ="img-gallery">
+
+        <img src="IMG_0911.JPG">
+        <img src="IMG_0909.JPG">
+        <img src="IMG_0910.JPG">
+        <img src="IMG_0912.JPG">
+        <img src="IMG_0913.JPG">
+        <img src="IMG_0920.JPG">
+        <img src="IMG_0926.JPG">
+        <img src="IMG_0927.JPG">
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <h4>Thank you!</h4>
+        <p>If you have any further questions, feel free to reach out.</p>
+        <a href="https://www.instagram.com/bedandbreak_?igsh=MWlzYjBoY3p0ZG95cQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa-brands fa-instagram custom-insta"></i>
+        </a>
+       
+    
+    
+    </section>
+    
+    
+    <!--- JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+    
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    
+    </body>
+    
+    </html>
