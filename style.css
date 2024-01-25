@@ -246,7 +246,39 @@ h3{
     display: block; 
 }
 
-.layer{
+ /* .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+} */
+
+/*.layer:hover{
+    background: rgba(4,9,30,0.7);
+} */
+
+/* .layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+} */
+/* .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+} */
+
+/* Update the class name to '.layer-overlay' */
+.layer-overlay {
     background: transparent;
     height: 100%;
     width: 100%;
@@ -256,11 +288,11 @@ h3{
     transition: 0.5s;
 }
 
-.layer:hover{
-    background: rgba(4,9,30,0.7);
+.layer-overlay:hover {
+    background: rgba(4, 9, 30, 0.7);
 }
 
-.layer h3{
+.layer-overlay h3 {
     width: 100%;
     font-weight: 600;
     color: #fff;
@@ -272,10 +304,25 @@ h3{
     opacity: 0;
     transition: 0.5s;
 }
-.layer:hover h3{
+
+.layer-overlay:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
+
+/* Add styles for the visible state of the overlay */
+.layer-overlay.visible {
+    background: rgba(4, 9, 30, 0.7);
+}
+
+.layer-overlay.visible h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+
+
 
 @media(max-width: 700px){
     .campus-col{
