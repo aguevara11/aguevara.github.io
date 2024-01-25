@@ -75,14 +75,14 @@
     <div class="row">
         <div class="campus-col">
             <img src="IMG_0907.JPG">
-            <div class="layer">
+            <div class="layer-overlay">
                 <h3>Living Room</h3>
             </div>
         </div>
 
         <div class="campus-col">
             <img src="IMG_0902.JPG">
-            <div class="layer">
+            <div class="layer-overlay">
                 <h3>Kitchen</h3>
                 
             </div>
@@ -90,18 +90,31 @@
 
         <div class="campus-col">
             <img src="IMG_0911.JPG">
-            <div class="layer">
+            <div class="layer-overlay">
                 <h3>Bedroom</h3>
             </div>
         </div>
 
         <div class="campus-col">
             <img src="IMG_0924.JPG">
-            <div class="layer">
+            <div class="layer-overlay">
                 <h3>Bathroom</h3>
             </div>
         </div>
     </div>
+
+
+<script> ('DOMContentLoaded', function () {
+  var overlayElements = document.querySelectorAll('.layer-overlay');
+
+  overlayElements.forEach(function (overlay) {
+    overlay.addEventListener('click', function () {
+      overlay.classList.toggle('visible');
+    });
+  });
+});
+</script>
+
 
 </section>
 <!---------Reviews--------->
