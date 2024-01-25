@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>BED AND BREAK LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo-container">
+                <img src="bdlogo.png" alt="Logo">
+            </div>
+            
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">HOSTS</a></li>
+                    <li><a href="unit.html">UNIT</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+         <h1>CONTACT US</h1>
+
+    </section>
+
+    <!---Contact US---->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.479341291468!2d-86.77798882419103!3d36.15488857243816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864665d8d272787%3A0x3f50a40c51c741aa!2sThe%20Burnham!5e0!3m2!1sen!2sus!4v1705880358135!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home custom-insta"></i>
+                <span>
+                    <h5>501 Rep. John Lewis Way S</h5>
+                    <p>Nashville, TN 37203</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone custom-insta"></i>
+                <span>
+                    <h5>(615) 649-2591</h5>
+                    <p>Send us a message anytime!</p>
+                </span>
+            </div>
+
+
+            <div>
+                <i class="fa fa-envelope custom-insta"></i>
+                <span>
+                    <h5>angheloguevara@thebedandbreak.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+
+         </div>
+
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn2">Send Message</button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+        
+
+
+</section>
+
+
+
+    <section class="footer">
+        <h4>Thank you!</h4>
+        <p>If you have any further questions, feel free to reach out.</p>
+        <a href="https://www.instagram.com/bedandbreak_?igsh=MWlzYjBoY3p0ZG95cQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa-brands fa-instagram custom-insta"></i>
+        </a>
+       
+    
+    
+    </section>
+    
+    
+    <!--- JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+    
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    
+    </body>
+    
+    </html>
